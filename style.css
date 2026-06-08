@@ -1,0 +1,147 @@
+:root {
+    --primary-color: #4f46e5;
+    --background-color: #f3f4f6;
+    --card-color: #ffffff;
+    --accent-color: #fef3c7; /* Amarelo claro para destacar o prazo */
+    --accent-border: #d97706;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: var(--card-color);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 0;
+    color: #1f2937;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Caixa de destaque para o prazo de produção */
+.highlight-box {
+    background-color: var(--accent-color);
+    padding: 15px;
+    border-left: 4px solid var(--accent-border);
+    border-radius: 0 8px 8px 0;
+}
+
+.input-with-suffix {
+    display: flex;
+    align-items: center;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.input-with-suffix input {
+    border: none;
+    flex: 1;
+}
+
+.input-with-suffix span {
+    padding: 0 12px;
+    background: #e5e7eb;
+    color: #374151;
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+small {
+    color: #6b7280;
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.marketplaces-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.marketplace-option {
+    border: 1px solid #e5e7eb;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: white;
+}
+
+.marketplace-option input {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #4338ca;
+}
