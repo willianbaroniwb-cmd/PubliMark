@@ -2,7 +2,7 @@
     --primary-color: #4f46e5;
     --background-color: #f3f4f6;
     --card-color: #ffffff;
-    --accent-color: #fef3c7; /* Amarelo claro para destacar o prazo */
+    --accent-color: #fef3c7;
     --accent-border: #d97706;
 }
 
@@ -66,7 +66,52 @@ textarea {
     height: 100px;
 }
 
-/* Caixa de destaque para o prazo de produção */
+/* Área de Upload */
+.upload-container {
+    border: 2px dashed #cbd5e1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background: #f8fafc;
+    cursor: pointer;
+}
+
+.upload-container:hover {
+    border-color: var(--primary-color);
+}
+
+.upload-container p {
+    margin: 0 0 10px 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.btn-secondary {
+    background: #e2e8f0;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Container de Miniaturas */
+.preview-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.preview-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+}
+
+/* Logística de Impressão 3D */
 .highlight-box {
     background-color: var(--accent-color);
     padding: 15px;
