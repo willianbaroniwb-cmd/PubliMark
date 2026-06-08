@@ -12,7 +12,6 @@
     <h2>🚀 Novo Anúncio Multi-Canal (Impressão 3D)</h2>
     
     <form id="productForm">
-        <!-- Dados Básicos -->
         <div class="form-group">
             <label for="title">Título do Anúncio</label>
             <input type="text" id="title" placeholder="Ex: Action Figure Pokémon - Articulado 15cm" required>
@@ -29,22 +28,30 @@
             </div>
         </div>
 
-        <!-- Logística de Impressão 3D -->
         <div class="form-group highlight-box">
             <label for="productionTime">⏱️ Prazo de Produção / Impressão</label>
             <div class="input-with-suffix">
                 <input type="number" id="productionTime" min="0" placeholder="Ex: 3" required>
                 <span>dias úteis</span>
             </div>
-            <small>Tempo necessário para imprimir, dar acabamento e embalar o produto.</small>
+            <small>Tempo necessário para imprimir, dar acabamento e embalar.</small>
+        </div>
+
+        <div class="form-group">
+            <label>📸 Fotos do Produto</label>
+            <div class="upload-container" id="dropZone">
+                <input type="file" id="fileInput" accept="image/*" multiple style="display: none;">
+                <p>Clique ou arraste as fotos da sua impressão aqui</p>
+                <button type="button" class="btn-secondary" onclick="document.getElementById('fileInput').click()">Selecionar Fotos</button>
+            </div>
+            <div class="preview-container" id="previewContainer"></div>
         </div>
 
         <div class="form-group">
             <label for="description">Descrição do Anúncio</label>
-            <textarea id="description" placeholder="Escreva os detalhes. Dica: informe o material (PLA, ABS, Resina) e cuidados com a peça..."></textarea>
+            <textarea id="description" placeholder="Escreva os detalhes. Dica: informe o material (PLA, ABS, Resina)..."></textarea>
         </div>
 
-        <!-- Seleção de Marketplaces -->
         <div class="form-group">
             <label>Publicar simultaneamente em:</label>
             <div class="marketplaces-grid">
